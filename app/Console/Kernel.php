@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        // commandes
+        // commandS
         \App\Console\Commands\GenerateUsersCsv::class,
         \App\Console\Commands\ImportUsers::class,
         \App\Console\Commands\PurgeUsers::class,
