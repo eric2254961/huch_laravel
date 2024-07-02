@@ -35,7 +35,7 @@ class ImportUsers extends Command
         $records = $csv->getRecords();
 
         foreach ($records as $record) {
-            // Vérifiez si les champs requis existent dans chaque enregistrement
+            // Check if required fields exist in each record
             if (!isset($record['first_name'], $record['last_name'], $record['dob'], $record['email'], $record['password'])) {
                 $this->error('CSV record missing required fields.');
                 continue;
